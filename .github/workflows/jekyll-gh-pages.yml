@@ -26,6 +26,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+     - run: actions/checkout@v6
+     - run: actions/configure-pages@v5
+     - run: actions/upload-pages-artifact@v3
       
   # Deployment job
   deploy:
